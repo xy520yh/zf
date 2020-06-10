@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html >
+<head>
+<meta charset="utf-8" />
+<meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
+<meta content="telephone=no" name="format-detection" />
+<meta content="email=no" name="format-detection" />
+<title>仙剑奇侠传支付</title>
+<meta name="Keywords" content=""/>
+<meta name="description" content=""/>
+<link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+<body>
+	<div class="wrap">
+    	<!--第一屏-->
+        <div class="page_1">
+        	 <div class="logo"></div> 
+        	 <div class="page_wrap">
+                <p class="title">亲爱的用户，请<a href='#'>［登陆］</a></p>
+                <div class="title1">
+                  <span class="select_01">选择大区</span>
+                 <div class="select_box1">
+                     <p class="btna">请选择支付方式</p>
+                     <ul class="select_ul">
+                        <li>支付宝</li>
+                        <li>红包</li>
+                        <li>银行卡</li>
+                    </ul>
+                  </div>
+                  </div>
+                    <div class="title1">
+                      <span class="select_01">选择人物</span>
+                          <div class="select_box2">
+                         <p class="btna">请选择支付方式</p>
+                         <ul class="select_ul">
+                            <li>支付宝</li>
+                            <li>红包</li>
+                            <li>银行卡</li>
+                        </ul>
+                      </div>
+                    </div>
+                  <!--  -->
+             
+                  <!--<div class="select1">
+                	 
+               </div>-->
+        	</div>
+        
+        </div>
+         <!--第二屏-->
+		<div class="page_3">
+            <div class="recharge">
+                <h4>充值</h4>
+                <div class="payment">
+                  <span class="name">支付方式：</span>
+                  <div class="select_box3">
+                         <p class="btnb">请选择支付方式</p>
+                         <ul class="select_ul">
+                            <li>支付宝</li>
+                            <li>红包</li>
+                            <li>银行卡</li>
+                        </ul>
+                      </div>
+                <span class="type"></span></div>
+                <p class="payment" ><span class="name">充值金额：</span><span class="type1 hand active">5000币</a></span><span class="type1 hand">10000币</span></p>
+                <p class="btn"><a href='#'>立即充值</a></p>
+                <p class="pact">点击立即充值，即表示您已同意<a href='#'>《充值协议》</a></p>
+            </div>
+            <div class="border_line"></div>
+            <div class="tip">
+                <p>温馨提示：</p>
+                <p>1.昆仑币充值成功后，不能退款、体现或转赠他人；</p>
+                <P>2.如有问题，请拨打客服中心进行反馈。</P>
+            </div>
+		</div>
+      
+	</div>
+     <!--弹出-->
+    <div class="masked"></div>
+    <!--成功-->
+    <div class="success">
+      <p  class="green">充值成功</p>
+      <p class="right"><img src="images/right.png"></p>
+      <p class="fan_index hand">返回首页</p>
+    </div>
+    <!--失败-->
+    <div class="lose">
+      <p  class="red">充值成功</p>
+      <p class="wrong"><img src="images/wrong.png"></p>
+      <p class="fan_index">重新充值</p>
+    </div>
+<script type="text/javascript" src="js/jquery.min.js"></script> 
+<script type="text/javascript" src="js/index.js"></script>
+<script type="text/javascript" src="js/rem.min.js"></script>
+<script>
+
+  
+    $('.select_box1 .btna').click(function(){
+	  $('.select_box1 .select_ul').fadeIn(); 
+	})
+	var li_length=$('.select_box1 .select_ul li').length;
+	console.log(li_length)
+	  for(var i=0; i<li_length;i++){
+		   $('.select_box1 li').click(function(){
+			    $('.select_box1 .select_ul').fadeOut();
+			 $('.select_box1 .btna').html($(this).html());
+			 
+			})
+	  }
+	  
+	  
+	    $('.select_box2 .btna').click(function(){
+	  $('.select_box2 .select_ul').fadeIn(); 
+	})
+	var li_length=$('.select_box2 .select_ul li').length;
+	console.log(li_length)
+	  for(var i=0; i<li_length;i++){
+		   $('.select_box2 li').click(function(){
+			    $('.select_box2 .select_ul').fadeOut();
+			 $('.select_box2 .btna').html($(this).html());
+			 
+			})
+	  }
+	  
+	   $('.select_box3 .btnb').click(function(){
+	  $('.select_box3 .select_ul').fadeIn(); 
+	})
+	var li_length=$('.select_box3 .select_ul li').length;
+	console.log(li_length)
+	  for(var i=0; i<li_length;i++){
+		   $('.select_box3 li').click(function(){
+			    $('.select_box3 .select_ul').fadeOut();
+			 $('.select_box3 .btnb').html($(this).html());
+			 
+			})
+	  }
+  </script>
+</body>
+</html>
